@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD0948F6187DBC0C004656C3 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0948EB187DBB51004656C3 /* Roboto-Medium.ttf */; };
+		DD0948F7187DBC0C004656C3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0948EC187DBB51004656C3 /* Roboto-Regular.ttf */; };
+		DD7C8C0A187C9F9500F01C87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C8C09187C9F9500F01C87 /* Cocoa.framework */; };
+		DD7C8C14187C9F9500F01C87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD7C8C12187C9F9500F01C87 /* InfoPlist.strings */; };
+		DD7C8C16187C9F9500F01C87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C8C15187C9F9500F01C87 /* main.m */; };
+		DD7C8C1A187C9F9500F01C87 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD7C8C18187C9F9500F01C87 /* Credits.rtf */; };
+		DD7C8C1D187C9F9500F01C87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C8C1C187C9F9500F01C87 /* AppDelegate.m */; };
+		DD7C8C20187C9F9500F01C87 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7C8C1E187C9F9500F01C87 /* MainMenu.xib */; };
+		DD7C8C29187C9F9500F01C87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C8C28187C9F9500F01C87 /* XCTest.framework */; };
+		DD7C8C2A187C9F9500F01C87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C8C09187C9F9500F01C87 /* Cocoa.framework */; };
+		DD7C8C32187C9F9500F01C87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD7C8C30187C9F9500F01C87 /* InfoPlist.strings */; };
+		DD7C8C34187C9F9500F01C87 /* GRGlassWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C8C33187C9F9500F01C87 /* GRGlassWindowTests.m */; };
+		DD7C8C3F187CA11800F01C87 /* GRGlassWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C8C3E187CA11800F01C87 /* GRGlassWindow.m */; };
+		DD7C8C4B187CAD1100F01C87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C8C4A187CAD1100F01C87 /* QuartzCore.framework */; };
+		DD7C8C4E187CD61100F01C87 /* GRGlassThemeWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C8C4D187CD61100F01C87 /* GRGlassThemeWidget.m */; };
+		F458553F187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F458553E187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m */; };
+		F45A5B061880262F004B6AC7 /* glassicon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = F45A5B051880262F004B6AC7 /* glassicon.iconset */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD7C8C2B187C9F9500F01C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7C8BFE187C9F9500F01C87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD7C8C05187C9F9500F01C87;
+			remoteInfo = GRGlassWindow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD0948EB187DBB51004656C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		DD0948EC187DBB51004656C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		DD7C8C06187C9F9500F01C87 /* GRGlassWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRGlassWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7C8C09187C9F9500F01C87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DD7C8C0C187C9F9500F01C87 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DD7C8C0D187C9F9500F01C87 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD7C8C0E187C9F9500F01C87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD7C8C11187C9F9500F01C87 /* GRGlassWindow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRGlassWindow-Info.plist"; sourceTree = "<group>"; };
+		DD7C8C13187C9F9500F01C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD7C8C15187C9F9500F01C87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD7C8C17187C9F9500F01C87 /* GRGlassWindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRGlassWindow-Prefix.pch"; sourceTree = "<group>"; };
+		DD7C8C19187C9F9500F01C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DD7C8C1B187C9F9500F01C87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD7C8C1C187C9F9500F01C87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD7C8C1F187C9F9500F01C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DD7C8C27187C9F9500F01C87 /* GRGlassWindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRGlassWindowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7C8C28187C9F9500F01C87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DD7C8C2F187C9F9500F01C87 /* GRGlassWindowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRGlassWindowTests-Info.plist"; sourceTree = "<group>"; };
+		DD7C8C31187C9F9500F01C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD7C8C33187C9F9500F01C87 /* GRGlassWindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRGlassWindowTests.m; sourceTree = "<group>"; };
+		DD7C8C3D187CA11800F01C87 /* GRGlassWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRGlassWindow.h; path = "GRGlassWindow Class/GRGlassWindow.h"; sourceTree = "<group>"; };
+		DD7C8C3E187CA11800F01C87 /* GRGlassWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRGlassWindow.m; path = "GRGlassWindow Class/GRGlassWindow.m"; sourceTree = "<group>"; };
+		DD7C8C4A187CAD1100F01C87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD7C8C4C187CD61100F01C87 /* GRGlassThemeWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRGlassThemeWidget.h; path = "GRGlassWindow Class/GRGlassThemeWidget.h"; sourceTree = "<group>"; };
+		DD7C8C4D187CD61100F01C87 /* GRGlassThemeWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRGlassThemeWidget.m; path = "GRGlassWindow Class/GRGlassThemeWidget.m"; sourceTree = "<group>"; };
+		F458553D187D6CAB00F07EA0 /* GRGlassAccessoryWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRGlassAccessoryWindow.h; path = "GRGlassWindow Class/GRGlassAccessoryWindow.h"; sourceTree = "<group>"; };
+		F458553E187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRGlassAccessoryWindow.m; path = "GRGlassWindow Class/GRGlassAccessoryWindow.m"; sourceTree = "<group>"; };
+		F4585540187D82DB00F07EA0 /* PrivateStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrivateStuff.h; path = "GRGlassWindow Class/PrivateStuff.h"; sourceTree = "<group>"; };
+		F45A5B051880262F004B6AC7 /* glassicon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = glassicon.iconset; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD7C8C03187C9F9500F01C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C8C4B187CAD1100F01C87 /* QuartzCore.framework in Frameworks */,
+				DD7C8C0A187C9F9500F01C87 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C8C24187C9F9500F01C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C8C2A187C9F9500F01C87 /* Cocoa.framework in Frameworks */,
+				DD7C8C29187C9F9500F01C87 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD0948E8187DBB27004656C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD0948F3187DBBF8004656C3 /* Fonts */,
+			);
+			name = Resources;
+			path = "GRGlassWindow Class/Resources";
+			sourceTree = "<group>";
+		};
+		DD0948F3187DBBF8004656C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DD0948EB187DBB51004656C3 /* Roboto-Medium.ttf */,
+				DD0948EC187DBB51004656C3 /* Roboto-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		DD7C8BFD187C9F9500F01C87 = {
+			isa = PBXGroup;
+			children = (
+				F45A5B051880262F004B6AC7 /* glassicon.iconset */,
+				DD7C8C0F187C9F9500F01C87 /* GRGlassWindow */,
+				DD7C8C2D187C9F9500F01C87 /* GRGlassWindowTests */,
+				DD7C8C08187C9F9500F01C87 /* Frameworks */,
+				DD7C8C07187C9F9500F01C87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD7C8C07187C9F9500F01C87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C06187C9F9500F01C87 /* GRGlassWindow.app */,
+				DD7C8C27187C9F9500F01C87 /* GRGlassWindowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD7C8C08187C9F9500F01C87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C4A187CAD1100F01C87 /* QuartzCore.framework */,
+				DD7C8C09187C9F9500F01C87 /* Cocoa.framework */,
+				DD7C8C28187C9F9500F01C87 /* XCTest.framework */,
+				DD7C8C0B187C9F9500F01C87 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD7C8C0B187C9F9500F01C87 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C0C187C9F9500F01C87 /* AppKit.framework */,
+				DD7C8C0D187C9F9500F01C87 /* CoreData.framework */,
+				DD7C8C0E187C9F9500F01C87 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DD7C8C0F187C9F9500F01C87 /* GRGlassWindow */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C1B187C9F9500F01C87 /* AppDelegate.h */,
+				DD7C8C1C187C9F9500F01C87 /* AppDelegate.m */,
+				DD7C8C1E187C9F9500F01C87 /* MainMenu.xib */,
+				DD7C8C10187C9F9500F01C87 /* Supporting Files */,
+				DD7C8C40187CA11D00F01C87 /* GRGlassWindow Class */,
+			);
+			path = GRGlassWindow;
+			sourceTree = "<group>";
+		};
+		DD7C8C10187C9F9500F01C87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C11187C9F9500F01C87 /* GRGlassWindow-Info.plist */,
+				DD7C8C12187C9F9500F01C87 /* InfoPlist.strings */,
+				DD7C8C15187C9F9500F01C87 /* main.m */,
+				DD7C8C17187C9F9500F01C87 /* GRGlassWindow-Prefix.pch */,
+				DD7C8C18187C9F9500F01C87 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD7C8C2D187C9F9500F01C87 /* GRGlassWindowTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C33187C9F9500F01C87 /* GRGlassWindowTests.m */,
+				DD7C8C2E187C9F9500F01C87 /* Supporting Files */,
+			);
+			path = GRGlassWindowTests;
+			sourceTree = "<group>";
+		};
+		DD7C8C2E187C9F9500F01C87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C8C2F187C9F9500F01C87 /* GRGlassWindowTests-Info.plist */,
+				DD7C8C30187C9F9500F01C87 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD7C8C40187CA11D00F01C87 /* GRGlassWindow Class */ = {
+			isa = PBXGroup;
+			children = (
+				DD0948E8187DBB27004656C3 /* Resources */,
+				DD7C8C3D187CA11800F01C87 /* GRGlassWindow.h */,
+				DD7C8C3E187CA11800F01C87 /* GRGlassWindow.m */,
+				DD7C8C4C187CD61100F01C87 /* GRGlassThemeWidget.h */,
+				DD7C8C4D187CD61100F01C87 /* GRGlassThemeWidget.m */,
+				F458553D187D6CAB00F07EA0 /* GRGlassAccessoryWindow.h */,
+				F458553E187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m */,
+				F4585540187D82DB00F07EA0 /* PrivateStuff.h */,
+			);
+			name = "GRGlassWindow Class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD7C8C05187C9F9500F01C87 /* GRGlassWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7C8C37187C9F9500F01C87 /* Build configuration list for PBXNativeTarget "GRGlassWindow" */;
+			buildPhases = (
+				DD7C8C02187C9F9500F01C87 /* Sources */,
+				DD7C8C03187C9F9500F01C87 /* Frameworks */,
+				DD7C8C04187C9F9500F01C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRGlassWindow;
+			productName = GRGlassWindow;
+			productReference = DD7C8C06187C9F9500F01C87 /* GRGlassWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD7C8C26187C9F9500F01C87 /* GRGlassWindowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7C8C3A187C9F9500F01C87 /* Build configuration list for PBXNativeTarget "GRGlassWindowTests" */;
+			buildPhases = (
+				DD7C8C23187C9F9500F01C87 /* Sources */,
+				DD7C8C24187C9F9500F01C87 /* Frameworks */,
+				DD7C8C25187C9F9500F01C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7C8C2C187C9F9500F01C87 /* PBXTargetDependency */,
+			);
+			name = GRGlassWindowTests;
+			productName = GRGlassWindowTests;
+			productReference = DD7C8C27187C9F9500F01C87 /* GRGlassWindowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD7C8BFE187C9F9500F01C87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Guilherme Rambo";
+				TargetAttributes = {
+					DD7C8C26187C9F9500F01C87 = {
+						TestTargetID = DD7C8C05187C9F9500F01C87;
+					};
+				};
+			};
+			buildConfigurationList = DD7C8C01187C9F9500F01C87 /* Build configuration list for PBXProject "GRGlassWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD7C8BFD187C9F9500F01C87;
+			productRefGroup = DD7C8C07187C9F9500F01C87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD7C8C05187C9F9500F01C87 /* GRGlassWindow */,
+				DD7C8C26187C9F9500F01C87 /* GRGlassWindowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD7C8C04187C9F9500F01C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45A5B061880262F004B6AC7 /* glassicon.iconset in Resources */,
+				DD0948F6187DBC0C004656C3 /* Roboto-Medium.ttf in Resources */,
+				DD0948F7187DBC0C004656C3 /* Roboto-Regular.ttf in Resources */,
+				DD7C8C14187C9F9500F01C87 /* InfoPlist.strings in Resources */,
+				DD7C8C1A187C9F9500F01C87 /* Credits.rtf in Resources */,
+				DD7C8C20187C9F9500F01C87 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C8C25187C9F9500F01C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C8C32187C9F9500F01C87 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD7C8C02187C9F9500F01C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C8C4E187CD61100F01C87 /* GRGlassThemeWidget.m in Sources */,
+				DD7C8C3F187CA11800F01C87 /* GRGlassWindow.m in Sources */,
+				DD7C8C1D187C9F9500F01C87 /* AppDelegate.m in Sources */,
+				DD7C8C16187C9F9500F01C87 /* main.m in Sources */,
+				F458553F187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C8C23187C9F9500F01C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C8C34187C9F9500F01C87 /* GRGlassWindowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD7C8C2C187C9F9500F01C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD7C8C05187C9F9500F01C87 /* GRGlassWindow */;
+			targetProxy = DD7C8C2B187C9F9500F01C87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD7C8C12187C9F9500F01C87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD7C8C13187C9F9500F01C87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD7C8C18187C9F9500F01C87 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD7C8C19187C9F9500F01C87 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DD7C8C1E187C9F9500F01C87 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD7C8C1F187C9F9500F01C87 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DD7C8C30187C9F9500F01C87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD7C8C31187C9F9500F01C87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD7C8C35187C9F9500F01C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DD7C8C36187C9F9500F01C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD7C8C38187C9F9500F01C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRGlassWindow/GRGlassWindow-Prefix.pch";
+				INFOPLIST_FILE = "GRGlassWindow/GRGlassWindow-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD7C8C39187C9F9500F01C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRGlassWindow/GRGlassWindow-Prefix.pch";
+				INFOPLIST_FILE = "GRGlassWindow/GRGlassWindow-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DD7C8C3B187C9F9500F01C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GRGlassWindow.app/Contents/MacOS/GRGlassWindow";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRGlassWindow/GRGlassWindow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GRGlassWindowTests/GRGlassWindowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DD7C8C3C187C9F9500F01C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GRGlassWindow.app/Contents/MacOS/GRGlassWindow";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRGlassWindow/GRGlassWindow-Prefix.pch";
+				INFOPLIST_FILE = "GRGlassWindowTests/GRGlassWindowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD7C8C01187C9F9500F01C87 /* Build configuration list for PBXProject "GRGlassWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C8C35187C9F9500F01C87 /* Debug */,
+				DD7C8C36187C9F9500F01C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7C8C37187C9F9500F01C87 /* Build configuration list for PBXNativeTarget "GRGlassWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C8C38187C9F9500F01C87 /* Debug */,
+				DD7C8C39187C9F9500F01C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7C8C3A187C9F9500F01C87 /* Build configuration list for PBXNativeTarget "GRGlassWindowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C8C3B187C9F9500F01C87 /* Debug */,
+				DD7C8C3C187C9F9500F01C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD7C8BFE187C9F9500F01C87 /* Project object */;
+}
