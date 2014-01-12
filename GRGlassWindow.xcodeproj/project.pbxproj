@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD0948F6187DBC0C004656C3 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0948EB187DBB51004656C3 /* Roboto-Medium.ttf */; };
 		DD0948F7187DBC0C004656C3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0948EC187DBB51004656C3 /* Roboto-Regular.ttf */; };
+		DD12F79E1882323400F401DA /* NSWindow+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = DD12F79D1882323400F401DA /* NSWindow+Screenshot.m */; };
 		DD7C8C0A187C9F9500F01C87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C8C09187C9F9500F01C87 /* Cocoa.framework */; };
 		DD7C8C14187C9F9500F01C87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD7C8C12187C9F9500F01C87 /* InfoPlist.strings */; };
 		DD7C8C16187C9F9500F01C87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C8C15187C9F9500F01C87 /* main.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		DD0948EB187DBB51004656C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DD0948EC187DBB51004656C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		DD12F79C1882323400F401DA /* NSWindow+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+Screenshot.h"; path = "GRGlassWindow Class/NSWindow+Screenshot.h"; sourceTree = "<group>"; };
+		DD12F79D1882323400F401DA /* NSWindow+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+Screenshot.m"; path = "GRGlassWindow Class/NSWindow+Screenshot.m"; sourceTree = "<group>"; };
 		DD7C8C06187C9F9500F01C87 /* GRGlassWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRGlassWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7C8C09187C9F9500F01C87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD7C8C0C187C9F9500F01C87 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -202,6 +205,8 @@
 				F458553D187D6CAB00F07EA0 /* GRGlassAccessoryWindow.h */,
 				F458553E187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m */,
 				F4585540187D82DB00F07EA0 /* PrivateStuff.h */,
+				DD12F79C1882323400F401DA /* NSWindow+Screenshot.h */,
+				DD12F79D1882323400F401DA /* NSWindow+Screenshot.m */,
 			);
 			name = "GRGlassWindow Class";
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 			files = (
 				DD7C8C4E187CD61100F01C87 /* GRGlassThemeWidget.m in Sources */,
 				DD7C8C3F187CA11800F01C87 /* GRGlassWindow.m in Sources */,
+				DD12F79E1882323400F401DA /* NSWindow+Screenshot.m in Sources */,
 				DD7C8C1D187C9F9500F01C87 /* AppDelegate.m in Sources */,
 				DD7C8C16187C9F9500F01C87 /* main.m in Sources */,
 				F458553F187D6CAB00F07EA0 /* GRGlassAccessoryWindow.m in Sources */,

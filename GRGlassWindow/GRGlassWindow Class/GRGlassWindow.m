@@ -10,10 +10,13 @@
 #import "GRGlassAccessoryWindow.h"
 #import <QuartzCore/QuartzCore.h>
 
+#import "NSWindow+Screenshot.h"
+
 @interface GRGlassWindow ()
 
 @property (nonatomic, readonly) GRGlassWindowFrame *frameView;
 @property (strong) GRGlassAccessoryWindow *titleWindow;
+@property (strong) NSImageView *screenshotImageView;
 
 @end
 
@@ -31,7 +34,8 @@
     
     // when this window is resized, the child window should be resized as well
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resizeChild:) name:NSWindowDidResizeNotification object:self];
-
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeScreenshotImage:) name:NSWindowDidDeminiaturizeNotification object:self];
+    
     return self;
 }
 
@@ -57,6 +61,36 @@
 - (void)resizeChild:(NSNotification *)notification
 {
     [self.titleWindow setFrame:[self titleWindowRect] display:YES animate:NO];
+}
+
+- (void)miniaturize:(id)sender
+{
+    // when the window miniaturizes, we need to take a screenshot including the
+    // child window, this is not done by default,
+    // so we take a screenshot of the window including the child and
+    // put it on the window, giving the illusion that everything is one window
+    NSImage *screenshot = [self screenshot];
+    
+    if(!self.screenshotImageView) self.screenshotImageView = [[NSImageView alloc] initWithFrame:NSZeroRect];
+    self.screenshotImageView.frame = NSMakeRect(0, 0, NSWidth([self.contentView frame]), NSHeight([self.contentView frame]));
+    self.screenshotImageView.image = screenshot;
+    
+    [self.contentView addSubview:self.screenshotImageView];
+    
+    // there has to be a slight delay before the window is actually miniaturized,
+    // otherwise the screenshot would not appear on time
+    double delayInSeconds = 0.01;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [super miniaturize:sender];
+    });
+}
+
+// called from NSWindowDidDeminiaturizeNotification
+- (void)removeScreenshotImage:(NSNotification *)notification
+{
+    // here we remove the screenshot used on miniaturization
+    [self.screenshotImageView removeFromSuperview];
 }
 
 - (void)setTitle:(NSString *)aString
