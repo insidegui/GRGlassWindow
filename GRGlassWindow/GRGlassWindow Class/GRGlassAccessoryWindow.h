@@ -17,7 +17,7 @@
 #import <Cocoa/Cocoa.h>
 #import "PrivateStuff.h"
 
-#define kGRGlassWindowTitleBarHeight 52.0
+#define kGRGlassWindowTitleBarHeight 40.0
 
 @interface GRGlassAccessoryWindow : NSWindow
 

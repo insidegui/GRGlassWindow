@@ -309,7 +309,7 @@
     
     NSPoint titlePoint;
     if(self.centerWidgets) {
-        titlePoint = NSMakePoint(round(NSWidth(self.frame)/2-titleAttributedString.size.width/2), NSHeight(self.frame)-titleAttributedString.size.height-1);
+        titlePoint = NSMakePoint(round(NSWidth(self.frame)/2-titleAttributedString.size.width/2), NSHeight(self.frame)/2.0-titleAttributedString.size.height/2.0);
     } else {
         titlePoint = NSMakePoint(round(NSWidth(self.frame)/2-titleAttributedString.size.width/2), [self widgetY]-3);
     }
