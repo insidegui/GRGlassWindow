@@ -26,6 +26,9 @@
 // smaller text below the title
 @property (nonatomic, copy) NSString *subtitle;
 
+// Title bar gradient
+@property (nonatomic, copy) NSGradient *titleBarGradient;
+
 @end
 
 

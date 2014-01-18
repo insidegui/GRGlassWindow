@@ -108,6 +108,11 @@
     self.titleWindow.hides = hidesTitleBar;
 }
 
+-(void)setTitleBarGradient:(NSGradient *)titleBarGradient
+{
+    self.titleWindow.gradient = titleBarGradient;
+}
+
 - (GRGlassWindowFrame *)frameView
 {
     return (GRGlassWindowFrame *)[self.contentView superview];

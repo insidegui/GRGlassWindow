@@ -10,6 +10,8 @@
 #import "GRGlassThemeWidget.h"
 #import <QuartzCore/QuartzCore.h>
 
+@class GRGlassWindow;
+
 #define kGRGlassAccessoryWindowDefaultBlurRadius 20
 
 @implementation GRGlassAccessoryWindow
@@ -118,6 +120,12 @@
     _hides = hides;
     GRGlassTitleBarView *titleBarView = (GRGlassTitleBarView *)[self.contentView superview];
     titleBarView.hides = hides;
+}
+
+- (void)setGradient:(NSGradient *)gradient
+{
+    GRGlassTitleBarView *titleBarView = (GRGlassTitleBarView *)[self.contentView superview];
+    titleBarView.gradient = gradient;
 }
 
 - (void)setAccessoryView:(NSView *)accessoryView
@@ -259,19 +267,25 @@
     [[NSColor clearColor] setFill];
     NSRectFill(dirtyRect);
     
-    CGFloat cornerRadius = 3;
+    CGFloat cornerRadius = 4;
     NSRect innerRect = NSInsetRect(self.frame, cornerRadius, cornerRadius);
     NSBezierPath *barPath = [NSBezierPath bezierPath];
     [barPath moveToPoint: NSMakePoint(NSMinX(self.frame), NSMinY(self.frame))];
     [barPath lineToPoint: NSMakePoint(NSMaxX(self.frame), NSMinY(self.frame))];
+    
     [barPath appendBezierPathWithArcWithCenter:NSMakePoint(NSMaxX(innerRect), NSMaxY(innerRect)) radius:cornerRadius startAngle:0 endAngle:90];
     [barPath appendBezierPathWithArcWithCenter:NSMakePoint(NSMinX(innerRect), NSMaxY(innerRect)) radius:cornerRadius startAngle:90 endAngle:180];
+    
     [barPath closePath];
     
     [barPath addClip];
     
-    [self.window.backgroundColor setFill];
-    NSRectFill(dirtyRect);
+    if (self.gradient) {
+        [self.gradient drawInRect:[self bounds] angle:-90];
+    } else {
+        [self.window.backgroundColor setFill];
+        NSRectFill(dirtyRect);
+    }
 
     NSRect separatorRect = NSMakeRect(0, .5, NSWidth(self.frame), .5);
     [[NSColor colorWithCalibratedWhite:0.1 alpha:1] setFill];
@@ -302,6 +316,7 @@
     
     [titleAttributedString drawAtPoint:titlePoint];
     
+    return;
     if(!self.subtitle) return;
     
     NSDictionary *subtitleAttributes = @{NSFontAttributeName: [NSFont fontWithName:@"Roboto-Regular" size:12.0], NSForegroundColorAttributeName : [NSColor colorWithCalibratedWhite:0.3 alpha:0.8]};

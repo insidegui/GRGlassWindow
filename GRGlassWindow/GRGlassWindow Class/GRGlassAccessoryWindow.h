@@ -26,6 +26,7 @@
 @property (nonatomic, assign) int blurRadius;
 @property (nonatomic, assign) BOOL hides;
 @property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSGradient *gradient;
 
 @end
 
@@ -37,6 +38,7 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSGradient *gradient;
 
 @property (nonatomic, assign) BOOL centerWidgets;
 

@@ -19,6 +19,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.window.backgroundColor = [NSColor whiteColor];
+    self.window.titleBarGradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedRed:0.91 green:0.91 blue:0.91 alpha:0.8] endingColor:[NSColor colorWithCalibratedRed:0.7 green:0.7 blue:0.7 alpha:0.9]];
     
     NSMutableArray *newPictures = [[NSMutableArray alloc] init];
     
