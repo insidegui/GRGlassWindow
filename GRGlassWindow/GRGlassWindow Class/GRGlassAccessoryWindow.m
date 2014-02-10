@@ -135,6 +135,7 @@
 {
     NSTrackingArea *_area;
     NSPoint _dragStart;
+    BOOL _dragged;
 }
 
 - (void)updateTrackingAreas
@@ -153,6 +154,8 @@
 #define kOSXMenuBarHeight 22.0
 - (void)mouseDragged:(NSEvent *)theEvent
 {
+    _dragged = YES;
+    
     NSPoint mouseLocation = [NSEvent mouseLocation];
 
     CGFloat windowY = round(mouseLocation.y-_dragStart.y-NSHeight(self.window.parentWindow.frame)+NSHeight(self.window.frame));
@@ -162,6 +165,14 @@
     
     NSPoint newPoint = NSMakePoint(mouseLocation.x-_dragStart.x, windowY);
     [self.window.parentWindow setFrameOrigin:newPoint];
+}
+
+- (void)mouseUp:(NSEvent *)theEvent
+{
+    if(!_dragged) return;
+    
+    [self.window.parentWindow becomeKeyWindow];
+    _dragged = NO;
 }
 
 - (BOOL)acceptsFirstResponder
