@@ -270,7 +270,7 @@
     [[NSColor clearColor] setFill];
     NSRectFill(dirtyRect);
     
-    CGFloat cornerRadius = 3;
+    CGFloat cornerRadius = 5;
     NSRect innerRect = NSInsetRect(self.frame, cornerRadius, cornerRadius);
     NSBezierPath *barPath = [NSBezierPath bezierPath];
     [barPath moveToPoint: NSMakePoint(NSMinX(self.frame), NSMinY(self.frame))];
