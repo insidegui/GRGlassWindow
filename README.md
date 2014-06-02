@@ -1,3 +1,7 @@
+#Warning: Obsolete!
+
+With OS X Yosemite's new look this project is now obsolete, I don't recomend using It anymore.
+
 GRGlassWindow
 =============
 
